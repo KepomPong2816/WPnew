@@ -1,0 +1,374 @@
+ERROR - 2023-06-21 17:45:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\PW2\WP\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\PW2\WP\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\PW2\WP\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\PW2\WP\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\PW2\WP\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\PW2\WP\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\PW2\WP\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\PW2\WP\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\PW2\WP\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\PW2\WP\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\PW2\WP\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+INFO - 2023-06-21 18:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 18:58:35 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\register', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\register', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(133): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\register', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->register()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 18:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 18:59:11 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\register', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\register', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(133): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\register', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->register()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 18:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 18:59:23 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->login()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:09:26 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->login()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:09:28 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(412): view('Myth\\Auth\\Views\\login', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->login()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:12:39 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('Myth\\Auth\\Views\\login', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(59): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->login()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:12:42 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('Myth\\Auth\\Views\\login', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(59): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->login()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:12:44 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('Myth\\Auth\\Views\\login', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(59): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->login()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:12:45 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\register', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('Myth\\Auth\\Views\\register', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(134): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\register', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->register()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:12:47 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('Myth\\Auth\\Views\\login', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(59): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->login()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:12:49 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\register', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('Myth\\Auth\\Views\\register', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(134): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\register', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->register()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:12:57 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\login', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('Myth\\Auth\\Views\\login', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(59): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\login', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->login()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:43:36 --> Class "Config\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+CRITICAL - 2023-06-21 19:49:30 --> Class "Config\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 19:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:50:45 --> Class "Config\LoginFilter" not found
+in SYSTEMPATH\Filters\Filters.php on line 166.
+ 1 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('dashboard', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:52:08 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 415.
+ 1 APPPATH\Views\daftar_pembeli.php(30): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\daftar_pembeli.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('App\\Views\\daftar_pembeli.php', [], true)
+ 5 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('App\\Views\\daftar_pembeli.php', [...])
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(134): Myth\Auth\Controllers\AuthController->_render('App\\Views\\daftar_pembeli.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:58:55 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 415.
+ 1 APPPATH\Views\daftar_pembeli.php(35): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\daftar_pembeli.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('App\\Views\\daftar_pembeli.php', [], true)
+ 5 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('App\\Views\\daftar_pembeli.php', [...])
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(134): Myth\Auth\Controllers\AuthController->_render('App\\Views\\daftar_pembeli.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:58:57 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 415.
+ 1 APPPATH\Views\daftar_pembeli.php(35): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\daftar_pembeli.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('App\\Views\\daftar_pembeli.php', [], true)
+ 5 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('App\\Views\\daftar_pembeli.php', [...])
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(134): Myth\Auth\Controllers\AuthController->_render('App\\Views\\daftar_pembeli.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 19:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 19:58:58 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 415.
+ 1 APPPATH\Views\daftar_pembeli.php(35): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\daftar_pembeli.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('App\\Views\\daftar_pembeli.php', [], true)
+ 5 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('App\\Views\\daftar_pembeli.php', [...])
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(134): Myth\Auth\Controllers\AuthController->_render('App\\Views\\daftar_pembeli.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-06-21 20:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 20:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-21 20:03:31 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 415.
+ 1 APPPATH\Views\daftar_pembeli.php(35): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\daftar_pembeli.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('App\\Views\\daftar_pembeli.php', [], true)
+ 5 VENDORPATH\myth\auth\src\Controllers\AuthController.php(413): view('App\\Views\\daftar_pembeli.php', [...])
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(134): Myth\Auth\Controllers\AuthController->_render('App\\Views\\daftar_pembeli.php', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->register()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')

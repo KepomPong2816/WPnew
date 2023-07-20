@@ -1,0 +1,107 @@
+INFO - 2023-07-04 03:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 03:43:41 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\forgot', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(439): view('Myth\\Auth\\Views\\forgot', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(239): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\forgot', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->forgotPassword()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-07-04 03:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 03:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 03:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 03:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 03:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 03:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 03:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 03:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 03:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 03:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 03:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 19:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 19:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 19:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 19:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 20:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 20:16:01 --> Undefined variable $profil
+in APPPATH\Views\Layout\navbar.php on line 23.
+ 1 APPPATH\Views\Layout\navbar.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil', 'D:\\PW2\\WP\\app\\Views\\Layout\\navbar.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\Layout\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Layout/navbar', null, true)
+ 5 APPPATH\Views\Layout\template.php(15): CodeIgniter\View\View->include('Layout/navbar')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\Layout\\template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Layout/template', [], true)
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard', [], true)
+10 APPPATH\Controllers\Barang.php(34): view('dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Barang->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-07-04 20:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 20:16:51 --> Undefined variable $profil
+in APPPATH\Views\Layout\navbar.php on line 23.
+ 1 APPPATH\Views\Layout\navbar.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil', 'D:\\PW2\\WP\\app\\Views\\Layout\\navbar.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\Layout\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Layout/navbar', null, true)
+ 5 APPPATH\Views\Layout\template.php(15): CodeIgniter\View\View->include('Layout/navbar')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\Layout\\template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Layout/template', [], true)
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard', [], true)
+10 APPPATH\Controllers\Barang.php(34): view('dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Barang->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-07-04 20:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 20:16:52 --> Undefined variable $profil
+in APPPATH\Views\Layout\navbar.php on line 23.
+ 1 APPPATH\Views\Layout\navbar.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil', 'D:\\PW2\\WP\\app\\Views\\Layout\\navbar.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\Layout\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Layout/navbar', null, true)
+ 5 APPPATH\Views\Layout\template.php(15): CodeIgniter\View\View->include('Layout/navbar')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\Layout\\template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Layout/template', [], true)
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard', [], true)
+10 APPPATH\Controllers\Barang.php(34): view('dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Barang->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-07-04 20:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 20:19:55 --> Undefined variable $profil
+in APPPATH\Views\Layout\navbar.php on line 23.
+ 1 APPPATH\Views\Layout\navbar.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil', 'D:\\PW2\\WP\\app\\Views\\Layout\\navbar.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\Layout\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Layout/navbar', null, true)
+ 5 APPPATH\Views\Layout\template.php(15): CodeIgniter\View\View->include('Layout/navbar')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\Layout\\template.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Layout/template', [], true)
+ 9 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dashboard', [], true)
+10 APPPATH\Controllers\Barang.php(34): view('dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Barang->index()
+12 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+13 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')

@@ -1,0 +1,57 @@
+INFO - 2023-07-06 02:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-06 02:53:03 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 599.
+ 1 SYSTEMPATH\Helpers\url_helper.php(599): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('dashboard')
+ 2 VENDORPATH\myth\auth\src\Views\_navbar.php(10): url_to('dashboard')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\_navbar.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\_navbar', [], true)
+ 6 VENDORPATH\myth\auth\src\Views\layout.php(25): view('Myth\\Auth\\Views\\_navbar')
+ 7 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\vendor\\myth\\auth\\src\\Views\\layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Myth\\Auth\\Views\\layout', [], true)
+10 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Myth\\Auth\\Views\\forgot', [], true)
+11 VENDORPATH\myth\auth\src\Controllers\AuthController.php(439): view('Myth\\Auth\\Views\\forgot', [...])
+12 VENDORPATH\myth\auth\src\Controllers\AuthController.php(239): Myth\Auth\Controllers\AuthController->_render('Myth\\Auth\\Views\\forgot', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): Myth\Auth\Controllers\AuthController->forgotPassword()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-07-06 02:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 02:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 02:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 02:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 02:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-06 03:58:14 --> Undefined variable $title
+in APPPATH\Views\Layout\template.php on line 10.
+ 1 APPPATH\Views\Layout\template.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\PW2\\WP\\app\\Views\\Layout\\template.php', 10)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\Layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('Layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Penjual/profil', [], true)
+ 6 APPPATH\Controllers\Page.php(40): view('Penjual/profil')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->profil()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-07-06 04:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-06 04:03:49 --> Undefined variable $pembeli
+in APPPATH\Views\Penjual\profil.php on line 7.
+ 1 APPPATH\Views\Penjual\profil.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pembeli', 'D:\\PW2\\WP\\app\\Views\\Penjual\\profil.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\PW2\\WP\\app\\Views\\Penjual\\profil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Penjual/profil', [], true)
+ 5 APPPATH\Controllers\Page.php(47): view('Penjual/profil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Page->profil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\PW2\\WP\\public\\index.php')
+INFO - 2023-07-06 04:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 04:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 04:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 04:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 04:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-06 11:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

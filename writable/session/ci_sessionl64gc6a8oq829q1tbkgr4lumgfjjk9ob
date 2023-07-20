@@ -1,0 +1,12 @@
+__ci_last_regenerate|i:1688544189;_ci_previous_url|s:53:"http://localhost:8080/index.php/penjual/tambah_barang";logged_in|s:1:"2";err|s:342:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>Nama barang harus diisi.</li>
+					<li>Harga harus diisi.</li>
+					<li>Stok harus diisi.</li>
+					<li>Pilih gambar terlebih dahulu!</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";__ci_vars|a:3:{s:3:"err";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:6:{s:14:"csrf_test_name";s:32:"5c3d28e07e57d176284f84f3c116a5e2";s:11:"nama_barang";s:0:"";s:5:"harga";s:0:"";s:5:"stock";s:0:"";s:8:"kategori";s:19:"Makanan dan Minuman";s:9:"deskripsi";s:0:"";}}_ci_validation_errors|a:4:{s:11:"nama_barang";s:24:"Nama barang harus diisi.";s:5:"harga";s:18:"Harga harus diisi.";s:5:"stock";s:17:"Stok harus diisi.";s:11:"foto_barang";s:29:"Pilih gambar terlebih dahulu!";}
